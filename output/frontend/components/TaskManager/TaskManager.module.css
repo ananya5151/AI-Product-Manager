@@ -1,0 +1,117 @@
+.container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.header {
+  color: #333;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input {
+  flex-grow: 1;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.error {
+  color: #d9534f;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  padding: 0.75rem;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.loadingText {
+  text-align: center;
+  color: #555;
+  padding: 2rem;
+}
+
+.taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+
+.taskItem.completed .taskTitle {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.taskTitle {
+  cursor: pointer;
+  flex-grow: 1;
+  margin-right: 1rem;
+}
+
+.toggleButton {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.toggleButton:hover {
+    background-color: #e0e0e0;
+}

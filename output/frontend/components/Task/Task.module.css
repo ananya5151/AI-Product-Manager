@@ -1,0 +1,36 @@
+/* Task.module.css */
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.container:hover {
+  background-color: #f7f7f7;
+}
+
+.checkbox {
+  margin-right: 12px;
+  cursor: pointer;
+  /* For better accessibility and control over styling */
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.title {
+  font-size: 1rem;
+  color: #333;
+  flex-grow: 1; /* Allows the title to take up remaining space */
+  cursor: pointer; /* Indicates the label is clickable */
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}

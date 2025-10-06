@@ -1,0 +1,40 @@
+/* TaskItem.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 8px;
+  list-style: none;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.taskContent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  font-size: 1rem;
+  color: #333;
+  transition: color 0.2s ease-in-out;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.status {
+  font-size: 0.75rem;
+  color: #555;
+  margin-top: 4px;
+  padding-left: 28px; /* Align with title text */
+}
+
+.error {
+  font-size: 0.75rem;
+  color: #d32f2f;
+  margin-top: 4px;
+  padding-left: 28px; /* Align with title text */
+}

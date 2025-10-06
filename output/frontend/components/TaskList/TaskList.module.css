@@ -1,0 +1,79 @@
+.container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+  font-size: 1.75rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.taskItem:last-child {
+  margin-bottom: 0;
+}
+
+.taskTitle {
+  color: #444;
+}
+
+.taskStatus {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  color: #d9534f;
+  background-color: #f2dede;
+}
+
+.completed {
+  background-color: #f0f8f0;
+}
+
+.completed .taskTitle {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.completed .taskStatus {
+  color: #5cb85c;
+  background-color: #dff0d8;
+}
+
+.stateMessage {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+  color: #777;
+}
+
+.error {
+  color: #d9534f;
+  font-weight: bold;
+}
